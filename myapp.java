@@ -1,18 +1,22 @@
 public class Application {
 
-  //Function
-  static void myMethod1() {
+  // Function
+  static void printILikePie() {
     System.out.println("I like pie!");
   }
 
-  //Function
-  static void myMethod2() {
+  // Function
+  static void printILikeCake() {
     System.out.println("I like cake!");
   }
 
-  //Run program
+  // Run program
   public static void main(String[] args) {
-    myMethod1();
-    myMethod2();
+    printILikePie();
+    printILikeCake();
+    for (int i = 0; i < 5; i++) {
+      System.out.println("Here's the number " + i);
+    }
   }
+
 }
