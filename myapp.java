@@ -24,6 +24,16 @@ public class Person {
     }
   }
 
+  static void aboutMe(String X, String Y) {
+    Person objName = new Person();
+    String name;
+    String favoriteColor;
+    objName.name = X;
+    objName.favoriteColor = Y;
+    System.out.println(objName.name);
+    System.out.println(objName.favoriteColor);
+  }
+
   // Property initializations
   String name = "";
   String favoriteColor = "";
@@ -36,19 +46,7 @@ public class Person {
     printILikeCake();
     spitNumbers();
 
-    // Matthew
-    Person Matthew = new Person();
-    Matthew.name = "Matthew";
-    Matthew.favoriteColor = "Orange";
-    System.out.println(Matthew.name);
-    System.out.println(Matthew.favoriteColor);
-
-    // John
-    Person John = new Person();
-    John.name = "John";
-    John.favoriteColor = "Blue";
-    System.out.println(John.name);
-    System.out.println(John.favoriteColor);
+    aboutMe("Red", "Blue");
   }
 
 }
