@@ -24,14 +24,17 @@ public class Application {
     }
   }
 
-  int x = 5;
-  int y = 7;
+  //Property initializations
+  String name = "";
+  String favoriteColor = "";
 
+  //Run program
   public static void main(String[] args) {
-    Application myObj1 = new Application();
-    Application myObj2 = new Application();
-    System.out.println(myObj1.x);
-    System.out.println(myObj2.y);
+    Application myObj = new Application();
+    myObj.name = "Matthew";
+    myObj.favoriteColor = "Orange";
+    System.out.println(myObj.name);
+    System.out.println(myObj.favoriteColor);
     printILikePie();
     printILikeCake();
     spitNumbers();
