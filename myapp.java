@@ -24,8 +24,14 @@ public class Application {
     }
   }
 
-  // Run program
+  int x = 5;
+  int y = 7;
+
   public static void main(String[] args) {
+    Application myObj1 = new Application();
+    Application myObj2 = new Application();
+    System.out.println(myObj1.x);
+    System.out.println(myObj2.y);
     printILikePie();
     printILikeCake();
     spitNumbers();
