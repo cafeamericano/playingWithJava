@@ -1,4 +1,4 @@
-public class Application {
+public class Person {
 
   // Pie function
   static void printILikePie() {
@@ -24,20 +24,31 @@ public class Application {
     }
   }
 
-  //Property initializations
+  // Property initializations
   String name = "";
   String favoriteColor = "";
 
-  //Run program
+  // Run program
   public static void main(String[] args) {
-    Application myObj = new Application();
-    myObj.name = "Matthew";
-    myObj.favoriteColor = "Orange";
-    System.out.println(myObj.name);
-    System.out.println(myObj.favoriteColor);
+
+    // Standard functions
     printILikePie();
     printILikeCake();
     spitNumbers();
+
+    // Matthew
+    Person Matthew = new Person();
+    Matthew.name = "Matthew";
+    Matthew.favoriteColor = "Orange";
+    System.out.println(Matthew.name);
+    System.out.println(Matthew.favoriteColor);
+
+    // John
+    Person John = new Person();
+    John.name = "John";
+    John.favoriteColor = "Blue";
+    System.out.println(John.name);
+    System.out.println(John.favoriteColor);
   }
 
 }
